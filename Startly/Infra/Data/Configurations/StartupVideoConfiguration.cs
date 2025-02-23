@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using Startly.Domains;
+using Startly.Domain;
 
-namespace Startly.Configuration
+namespace Startly.Infra.Data.Configurations
 {
     public class StartupVideoConfiguration : IEntityTypeConfiguration<StartupVideo>
     {
@@ -16,8 +16,6 @@ namespace Startly.Configuration
 
             builder.Property(v => v.StartupId)
                 .IsRequired();
-
-            builder.HasOne(v => v.Startup).WithMany(v => v.Videos).HasForeignKey(v => v.StartupId);
 
             builder.ToTable("StartupVideo");
         }

@@ -1,6 +1,6 @@
 ﻿namespace Startly.Enumerators
 {
-    public enum EnumContato
+    public enum EnumTipoContato
     {
         Email = 1,
         Telefone = 2,

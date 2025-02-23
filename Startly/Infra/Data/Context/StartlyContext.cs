@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Startly.Configuration;
-using Startly.Domains;
+using Startly.Domain;
+using Startly.Infra.Data.Configurations;
 
-namespace Startly.Context
+namespace Startly.Infra.Data.Context
 {
     public class StartlyContext : DbContext
     {
@@ -10,7 +10,7 @@ namespace Startly.Context
         public DbSet<StartupAtuacao> StartupAtuacaoSet { get; set; }
         public DbSet<StartupVideo> StartupVideoSet { get; set; }
         public DbSet<StartupContato> StartupContatoSet { get; set; }
-        public DbSet<StartupImagens> StartupImagensSet { get; set; }
+        public DbSet<StartupImagem> StartupImagensSet { get; set; }
         public DbSet<Atuacao> AtuacaoSet { get; set; }
 
 

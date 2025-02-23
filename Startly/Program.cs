@@ -1,5 +1,5 @@
-using Startly.Context;
-using Startly.Domains;
+using Startly.Domain;
+using Startly.Infra.Data.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 

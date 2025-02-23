@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Startly.Domains;
+using Startly.Domain;
 
-namespace Startly.Configuration
+namespace Startly.Infra.Data.Configurations
 {
     public class StartupConfiguration : IEntityTypeConfiguration<Startup>
     {
@@ -20,14 +20,15 @@ namespace Startly.Configuration
 
             builder.Property(p => p.metas)
                 .IsRequired()
-                .HasMaxLength (3000);
-                
+                .HasMaxLength(3000);
+
             builder.Property(p => p.CNPJ)
+                .IsRequired(false)
                 .HasMaxLength(14);
 
             builder.Property(p => p.Cep)
                 .IsRequired()
-                .HasMaxLength (9);
+                .HasMaxLength(9);
 
             builder.Property(p => p.Logradouro)
                 .IsRequired()
@@ -53,14 +54,14 @@ namespace Startly.Configuration
                 .IsRequired()
                 .HasMaxLength(250);
 
-            builder.Property(p => p.qtdeFuncionario)
+            builder.Property(p => p.QuantidadeFuncionario)
                 .IsRequired();
 
             builder.Property(p => p.EnumTicket)
                  .HasConversion<string>()
                  .IsRequired();
 
-            builder.Property(p => p.RespCadastro)
+            builder.Property(p => p.ResponsavelCadastro)
                  .IsRequired()
                  .HasMaxLength(100);
 
