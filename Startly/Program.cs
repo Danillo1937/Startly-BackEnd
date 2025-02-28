@@ -1,4 +1,4 @@
-using Startly.Domain;
+using Startly.Domain.Entities;
 using Startly.Infra.Data.Context;
 
 var builder = WebApplication.CreateBuilder(args);

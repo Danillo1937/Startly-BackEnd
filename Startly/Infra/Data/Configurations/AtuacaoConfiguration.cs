@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Startly.Domain;
+using Startly.Domain.Entities;
 
 namespace Startly.Infra.Data.Configurations
 {

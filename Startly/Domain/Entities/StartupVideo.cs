@@ -1,4 +1,4 @@
-﻿namespace Startly.Domain
+﻿namespace Startly.Domain.Entities
 {
     public class StartupVideo
     {

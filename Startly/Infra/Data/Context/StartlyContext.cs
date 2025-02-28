@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Startly.Domain;
+using Startly.Domain.Entities;
 using Startly.Infra.Data.Configurations;
 
 namespace Startly.Infra.Data.Context
