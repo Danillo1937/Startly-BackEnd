@@ -1,9 +1,9 @@
 ﻿using Startly.Domain.Entities;
 using Startly.Enumerators;
 
-namespace Startly.Domain.DTOs.Startup
+namespace Startly.Domain.DTOs.Adicionar.StartupAdicionarDto
 {
-    public class StartupAdicionarDTO
+    public class StartupAdicionarDto
     {
         public string Nome { get; set; } = string.Empty;
         public string Descricao { get; set; } = string.Empty;
@@ -23,10 +23,10 @@ namespace Startly.Domain.DTOs.Startup
         public string Senha { get; set; } = string.Empty;
 
 
-        public List<StartupAtuacaoAdicionarDTO> Atuacoes { get; set; } = [];
-        public List<StartupVideoAdicionarDTO> Videos { get; set; } = []; 
-        public List<StartupImagemAdicionarDTO> Imagens { get; set; } = [];
-        public List<StartupContatoAdicionarDTO> Contatos { get; set; } = [];
-        
+        public List<StartupAtuacaoAdicionarDto> Atuacoes { get; set; } = [];
+        public List<StartupVideoAdicionarDto> Videos { get; set; } = [];
+        public List<StartupImagemAdicionarDto> Imagens { get; set; } = [];
+        public List<StartupContatoAdicionarDto> Contatos { get; set; } = [];
+
     }
 }

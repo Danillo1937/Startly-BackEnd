@@ -1,10 +1,11 @@
-﻿using Startly.Enumerators;
+﻿using Startly.Domain.Entities;
+using Startly.Enumerators;
 
-namespace Startly.Domain.Entities
+namespace Startly.Domain.DTOs.Atualizar.StartupAtualizarDto
 {
-    public class Startup
+    public class StartupPesquisarDto
     {
-        public Guid Id { get; set; }
+        public Guid id { get; set; }
         public string Nome { get; set; } = string.Empty;
         public string Descricao { get; set; } = string.Empty;
         public string metas { get; set; } = string.Empty;
@@ -21,9 +22,11 @@ namespace Startly.Domain.Entities
         public string ResponsavelCadastro { get; set; } = string.Empty;
         public string Login { get; set; } = string.Empty;
         public string Senha { get; set; } = string.Empty;
-        public IEnumerable<StartupAtuacao> Atuacoes { get; set; } = [];
-        public IEnumerable<StartupImagem> Imagens { get; set; } = [];
-        public IEnumerable<StartupContato> Contatos { get; set; } = [];
-        public IEnumerable<StartupVideo> Videos { get; set; } = [];
+
+        public List<StartupAtuacaoAtualizarDto> Atuacoes { get; set; } = [];
+        public List<StartupVideoAtualizarDto> Videos { get; set; } = [];
+        public List<StartupImagemAtualizarDto> Imagens { get; set; } = [];
+        public List<StartupContatoAtualizarDto> Contatos { get; set; } = [];
+
     }
 }

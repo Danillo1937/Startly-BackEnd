@@ -1,4 +1,4 @@
-﻿namespace Startly.Domain.DTOs.Atuacao
+﻿namespace Startly.Domain.DTOs.Adicionar.AtuacaoAdicionarDto
 {
     public class AtuacaoAdicionarDTO
     {
